@@ -147,7 +147,7 @@ def windowed_df_to_Y(windowed_dataframe):
   return Y.astype(np.float32)
 
 #Reading datas from .csv file.
-stocksDf = pd.read_csv('C:/Users/kerem/Desktop/Masaustu/Dersler/Pdfler/5. Yarıyıl/Yapay Sinir Ağları/Proje/stockPredict/stocksList.csv')
+stocksDf = pd.read_csv('stocksList.csv')
 stocksDf.index = stocksDf.pop('Sıra No')
 stocksCode = stocksDf['Pay Kodu'].to_numpy()
 
